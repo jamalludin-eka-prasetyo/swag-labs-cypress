@@ -85,7 +85,7 @@ describe('Authenticate', () => {
 
   it('TC-SIMULATE > Verify login button text', () => {
     cy.visit('/')
-    cy.get('#login-button').should('have.value', 'Login') // ❌ sengaja salah, aslinya 'Login'
+    cy.get('#login-button').should('have.value', 'Loginn') // ❌ sengaja salah, aslinya 'Login'
   })
 
 })
