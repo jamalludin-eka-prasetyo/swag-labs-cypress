@@ -2,7 +2,9 @@ name: Cypress E2E Tests
 
 on:
   push:
-    branches: [main, feature/cicd-github-actions]
+    branches: [
+      main, 
+      feature/*]
   pull_request:
     branches: [main]
 

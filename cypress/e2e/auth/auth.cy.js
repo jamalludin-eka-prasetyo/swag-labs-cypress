@@ -81,5 +81,11 @@ describe('Authenticate', () => {
       cy.get('.bm-burger-button').click()
       cy.get('#logout_sidebar_link').click()
       cy.url().should('include','https://www.saucedemo.com/')
-    })
+  })
+
+  it('TC-SIMULATE > Verify login button text', () => {
+    cy.visit('/')
+    cy.get('#login-button').should('have.value', 'Sign In') // ❌ sengaja salah, aslinya 'Login'
+  })
+
 })
